@@ -1,0 +1,7 @@
+[project]
+name = "flask_demo"
+description = "set of simple http servers"
+version = "0.0.1"
+dependencies = [
+    "Flask >= 3.0.3"
+]
