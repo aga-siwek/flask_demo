@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Flask App</title>
+    <link rel="stylesheet" href="/static/main.css">
+</head>
+<body>
+<h1>Flask App</h1>
+<a href="/">home</a>
+<h2>Comments</h2>
+
+{% for comment in comments %}
+  <p>{{ comment }}</p>
+{% endfor %}
+
+</body>
+</html>

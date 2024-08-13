@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Flask App</title>
+    <link rel="stylesheet" href="/static/main.css">
+</head>
+<body>
+<h1>Flask App</h1>
+<a href="/comments/">comments</a>
+<p>Welcome to my application</p>
+{% if show_secret %}
+    <p>This is top secret text</p>
+{% else %}
+    <p>{{ top_secret_message }}</p>
+{% endif %}
+</body>
+</html>
