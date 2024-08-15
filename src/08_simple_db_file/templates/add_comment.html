@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Add comments</title>
+    <link rel="stylesheet" href="/static/main.css">
+</head>
+<body>
+<h1>Flask App</h1>
+<a href="/">home</a>
+<a href="/comments/">comments</a>
+<a href="/add_comment/">add comment</a>
+<h2>Add Comment GET</h2>
+<form action="/submit_comment/" method="get">
+    <label for="user_get">User: </label><br>
+    <input type="text" id="user_get" name="user"><br>
+    <label for="comment_get">Comment: </label><br>
+    <input type="text" id="comment_get" name="comment">
+    <input type="submit" value="Submit">
+</form>
+
+<h2>Add Comment POST</h2>
+<form action="/submit_comment/" method="post">
+    <label for="user_post">User: </label><br>
+    <input type="text" id="user_post" name="user"><br>
+    <label for="comment_post">Comment: </label><br>
+    <input type="text" id="comment_post" name="comment">
+    <input type="submit" value="Submit">
+</form>
+</body>
+</html>
