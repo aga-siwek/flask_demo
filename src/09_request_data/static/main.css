@@ -1,0 +1,11 @@
+html {
+    background-color: #efefef;
+}
+
+.request-section {
+    padding-top: 30px;
+}
+
+.request-section:last-child {
+    padding-bottom: 30px;
+}
