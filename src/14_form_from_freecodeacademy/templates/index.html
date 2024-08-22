@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>HTML survey</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="/static/styles.css">
+</head>
+
+<body>
+    <header>
+        <h1 id="title">
+            In the first project, I created a survey with FreeCodeCamp.
+        </h1>
+        <p class="subtitle">
+            I'm learning frontend and backend, this is part of my frontend task. I created a survey with different data
+            types.
+        </p>
+    </header>
+
+
+    <main class="form_container">
+        <form id="survey_form" class="survey_form" action="/" method="post">
+
+            <!-- 1st fieldset with basic information: name, emailm age -->
+            <fieldset class="fieldset_general">
+                <legend class="legend_general">
+                    <h3>Basic data</h3>
+                </legend>
+                <label for="name" id="name_label" class="label_text">Name</label>
+                <input id="name" name="name" type="text" placeholder="name" class="input_text" required />
+                <label for="email" id="email_label" class="label_text">Email</label>
+                <input id="email" name="email" type="email" placeholder="email" class="input_text" required />
+                <label for="number" id="number_label" class="label_text">Age</label>
+                <input id="number" name="number" type="number" min="1" max="130" placeholder="age" class="input_text" />
+            </fieldset>
+
+            <!-- 2nd fieldset with question about reccomendation -->
+            <fieldset class="fieldset_general">
+                <legend class="legend_general">
+                    <h3>Do you recommend freeCodeCamp to learn HTML?:)</h3>
+                </legend>
+                <select name="recommend" id="dropdown" , aria-placeholder="select option" class="select_dropdown">
+                    <option value="None"> select option</option>
+                    <option value="Yes"> Yes</option>
+                    <option value="No"> No</option>
+                </select>
+            </fieldset>
+
+            <!-- 3rd fieldset with question about quality of information in course -->
+            <fieldset class="fieldset_general">
+                <legend class="legend_general">
+                    <h3>Did you check the information on the internet during the course?</h3>
+                </legend>
+                <label for="no" class="label_radio"><input id="no" name="help" type="radio" value="no"
+                        class="input_radio" /> No</label>
+                <label for="sometimes" class="label_radio"> <input id="sometimes" name="help" type="radio"
+                        value="sometimes" class="input_radio" />
+                    Sometimes</label>
+                <label for="yes" class="label_radio"> <input id="yes" name="help" type="radio" value="yes"
+                        class="input_radio" /> Yes</label>
+            </fieldset>
+
+            <!-- 4th fieldset with question about favorite projects -->
+            <fieldset class="fieldset_general">
+                <legend class="legend_general">
+                    <h3>What were your favorite projects?</h3>
+                </legend>
+                <label for="cat" class="label_checkbox"><input id="cat" name="favorite_project" type="checkbox" value="cat website"
+                        class="input_checkbox" /> Cat website</label>
+                <label for= "markers" class="label_checkbox"> <input id="markers" name="favorite_project" type="checkbox"
+                        value="markers" class="input_checkbox" />
+                    Markers</label>
+                <label for="coffee" class="label_checkbox"><input id="coffee" name="favorite_project" type="checkbox" value="coffee menu"
+                        class="input_checkbox" /> Coffee menu</label>
+            </fieldset>
+
+            <!-- 4th fieldset with textarea to add a recommendation -->
+            <fieldset class="fieldset_general">
+                <legend class="legend_general">
+                    <h3>Please, write your recommendation.</h3>
+                </legend>
+                <textarea id="textarea" name="message" type="textarea" class="textarea" value="message"></textarea>
+            </fieldset>
+
+            <!-- 5th fieldset with submit button -->
+            <filedset>
+                <label for="sumbit" class="label_submit"></label>
+                <input id="submit" name="submit" type="submit" value="submit" class="input_submit" />
+            </filedset>
+        </form>
+    </main>
+    <footer>
+        <p>Created by Agnieszka Siwek</p>
+    </footer>
+</body>
+
+</html>
