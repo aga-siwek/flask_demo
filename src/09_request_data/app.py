@@ -2,7 +2,7 @@ from flask import Flask
 from flask import render_template
 from flask import request
 import config
-import utils
+import utils # created py file with functions
 
 # create flask application
 app = Flask(__name__)
@@ -51,7 +51,7 @@ def request_data_new():
         url_rule=request.url_rule,
         url_root=request.url_root,
         url_base=request.base_url,
-        headers=request.headers,
+        headers=request.headers, # remember headers always dictionary
         form=request.form,
         values=request.values,
         body=request.data.decode(),
